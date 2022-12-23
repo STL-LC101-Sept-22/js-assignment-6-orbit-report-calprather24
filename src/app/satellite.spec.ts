@@ -1,6 +1,12 @@
 import { Satellite } from './satellite';
 
 describe('Satellite', () => {
+  it('should create an instance', () => {
+    expect(new Satellite()).toBeTruthy();
+  });
+});
+
+describe('Satellite', () => {
   let satellite: Satellite;
   beforeEach(() => {
     satellite = new Satellite("foo", "bar", "baz", "lur", false);
